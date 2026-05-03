@@ -1,0 +1,1 @@
+import{t as e}from"./B0ziEfiS.js";function t(t){e(t)}function n(t){e(t,{replaceState:!0})}function r(){window.history.back()}export{t as n,n as r,r as t};

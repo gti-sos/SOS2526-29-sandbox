@@ -5,7 +5,7 @@
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   // Funciones para leer y actualizar vinos desde la API.
-  import { getOneWineStat, updateWineStat } from "../../services/wineStatsApi";
+  import { getOneWineStat, updateWineStat } from "../../services/wine-stats.js";
 
   // Get route parameters from SvelteKit page store
   $: id = $page.params.id;

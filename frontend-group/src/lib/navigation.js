@@ -1,4 +1,4 @@
-import { goto, prefetch } from '$app/navigation';
+import { goto } from '$app/navigation';
 
 // Navega usando SvelteKit's goto function
 export function navigate(path) {
@@ -15,5 +15,3 @@ export function back() {
   window.history.back();
 }
 
-// Prefetch a route for better performance
-export { prefetch };
