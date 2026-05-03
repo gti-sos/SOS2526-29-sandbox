@@ -3,7 +3,6 @@
   import { onDestroy, onMount, tick } from "svelte";
   // Servicio para pedir citys-stats al backend.
   import { getAllCitysStats } from "../services/citysStatsApi";
-  import { hcLightText } from "../lib/highcharts-light-surface.js";
 
   // Libreria Highcharts cargada cuando se necesita.
   let Highcharts;
@@ -60,12 +59,10 @@
         backgroundColor: "transparent"
       },
       title: {
-        text: "Poblacion estimada por ciudad",
-        style: hcLightText.title
+        text: "Poblacion estimada por ciudad"
       },
       subtitle: {
-        text: "API LCC citys-stats",
-        style: hcLightText.subtitle
+        text: "API LCC citys-stats"
       },
       accessibility: {
         enabled: true,
@@ -77,10 +74,6 @@
           return `<span>${this.name}</span><br/><strong>${formatter.format(this.y)}</strong> habitantes`;
         }
       },
-      legend: {
-        itemStyle: { color: hcLightText.axis.color },
-        itemHoverStyle: { color: hcLightText.title.color }
-      },
       plotOptions: {
         pie: {
           allowPointSelect: true,
@@ -88,13 +81,7 @@
           cursor: "pointer",
           dataLabels: {
             enabled: true,
-            format: "{point.name}: {point.percentage:.1f}%",
-            style: {
-              ...hcLightText.dataLabel,
-              fontWeight: "500",
-              fontSize: "11px"
-            },
-            connectorColor: hcLightText.line
+            format: "{point.name}: {point.percentage:.1f}%"
           },
           showInLegend: true
         }
@@ -202,7 +189,6 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: #f7f8fb;
     color: #111827;
-    color-scheme: light;
   }
 
   .analytics-page {
@@ -210,7 +196,6 @@
     margin: 0 auto;
     padding: 28px 16px 48px;
     text-align: left;
-    color: #111827;
   }
 
   .analytics-header {

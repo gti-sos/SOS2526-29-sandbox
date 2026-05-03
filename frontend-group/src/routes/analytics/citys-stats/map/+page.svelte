@@ -115,12 +115,10 @@
         }
       },
       title: {
-        text: "Mapa mundial de citys-stats",
-        style: { color: "#0f172a", fontWeight: "600" }
+        text: "Mapa mundial de citys-stats"
       },
       subtitle: {
-        text: "Burbujas situadas por latitud y longitud",
-        style: { color: "#475569" }
+        text: "Burbujas situadas por latitud y longitud"
       },
       accessibility: {
         enabled: true,
@@ -435,7 +433,6 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: #f5f7fb;
     color: #111827;
-    color-scheme: light;
   }
 
   .map-page {
@@ -443,7 +440,6 @@
     margin: 0 auto;
     padding: 28px 16px 48px;
     text-align: left;
-    color: #111827;
   }
 
   .map-header,

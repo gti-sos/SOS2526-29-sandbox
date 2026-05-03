@@ -1,4 +1,10 @@
-// Indicamos el tipo de configuracion para que el editor entienda este archivo.
-/** @type {import("@sveltejs/vite-plugin-svelte").SvelteConfig} */
-// Exportamos una configuracion vacia porque este proyecto no necesita opciones extra.
-export default {};
+import adapter from '@sveltejs/adapter-static';
+
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: adapter()
+	}
+};
+
+export default config;

@@ -1,16 +1,19 @@
-// Navega dentro de la SPA usando History API y notifica al router.
+import { goto, prefetch } from '$app/navigation';
+
+// Navega usando SvelteKit's goto function
 export function navigate(path) {
-  window.history.pushState({}, "", path);
-  window.dispatchEvent(new PopStateEvent("popstate"));
+  goto(path);
 }
 
 // Reemplaza la URL actual sin crear nueva entrada de historial.
 export function replace(path) {
-  window.history.replaceState({}, "", path);
-  window.dispatchEvent(new PopStateEvent("popstate"));
+  goto(path, { replaceState: true });
 }
 
 // Vuelve a la ruta anterior.
 export function back() {
   window.history.back();
 }
+
+// Prefetch a route for better performance
+export { prefetch };

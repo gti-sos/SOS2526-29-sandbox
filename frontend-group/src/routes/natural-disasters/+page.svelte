@@ -267,14 +267,6 @@
 </div>
 
 <style>
-    :global(body) {
-        margin: 0;
-        min-height: 100vh;
-        font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-        background: #0b1220;
-        color: #f5f7fb;
-    }
-
     /* Estilos basados en el tema de tus compañeros para mantener consistencia */
     .page { max-width: 1200px; margin: 0 auto; padding: 24px; color: #f5f7fb; }
     h1 { font-size: 2rem; margin-bottom: 5px; color: #1c48c9; }

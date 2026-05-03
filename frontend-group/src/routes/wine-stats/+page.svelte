@@ -292,26 +292,8 @@
   </section>
 </div>
 <style>
-  :global(body) {
-    margin: 0;
-    min-height: 100vh;
-    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-    background: #0b1220;
-    color: #f5f7fb;
-  }
-
-  .page {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 24px 16px;
-    color: #f5f7fb;
-  }
-
-  h1 {
-    font-size: 2rem;
-    margin-bottom: 24px;
-    color: #f9fafb;
-  }
+  .page { max-width: 1200px; margin: 0 auto; padding: 24px 16px; color: #f5f7fb; }
+  h1 { font-size: 2rem; margin-bottom: 24px; color: #000000; }
   h2 { margin-top: 0; margin-bottom: 16px; color: #f5f7fb; }
   .card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 24px; margin-bottom: 24px; }
   .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px; }

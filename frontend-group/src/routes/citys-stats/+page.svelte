@@ -311,7 +311,7 @@
     </div>
 
     <header class="hero">
-      <div class="hero-intro">
+      <div>
         <p class="eyebrow">LCC · city-stats</p>
         <h1>Estadisticas de ciudades</h1>
         <p class="subtitle">
@@ -553,7 +553,6 @@
       radial-gradient(circle at top right, rgba(186, 230, 253, 0.7), transparent 28%),
       linear-gradient(180deg, #fffaf0 0%, #f6f8fc 100%);
     color: #1f2937;
-    color-scheme: light;
   }
 
   .page-shell {
@@ -607,41 +606,27 @@
     margin-bottom: 24px;
   }
 
-  .hero-intro {
-    padding: 26px 28px;
-    border-radius: 24px;
-    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 78%, #172554 100%);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.3);
-    color: #ffffff;
-  }
-
-  .hero-intro .eyebrow {
+  .eyebrow {
     margin: 0 0 8px;
     text-transform: uppercase;
     letter-spacing: 0.18em;
-    color: #ffffff;
+    color: #b45309;
     font-size: 0.8rem;
     font-weight: 700;
   }
 
-  .hero-intro h1 {
+  h1 {
     margin: 0;
     font-size: clamp(2rem, 4vw, 3.3rem);
-    line-height: 1.08;
-    color: #ffffff;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.3);
+    line-height: 1.05;
+    color: #0f172a;
   }
 
-  .hero-intro .subtitle {
-    margin: 14px 0 0;
+  .subtitle {
+    margin: 12px 0 0;
     max-width: 760px;
-    color: #ffffff;
-    font-size: 1.08rem;
-    line-height: 1.58;
-    font-weight: 500;
+    color: #475569;
+    font-size: 1.05rem;
   }
 
   .summary-card,
